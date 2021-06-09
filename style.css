@@ -14,6 +14,7 @@ html {
     min-height: 100vh;
     background-color: #292986;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -24,15 +25,14 @@ html {
     grid-template-columns: repeat(3,1fr);
     place-items: center;
     grid-template-rows: repeat(3,1fr);
-    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3),
-    -15px -15px 40px rgba(255,255,255,0.12);
-    border-radius: 10px;
+    box-shadow: 1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.3),
+    -1.5rem -1.5rem 4rem rgba(255,255,255,0.12);
 }
 .board .piece{
     width: 15rem;
     height: 11.7rem;
     outline: none;
-    border: 3px solid hsla(206, 20%, 93%,0.3);
+    border: 0.3rem solid hsla(206, 20%, 93%,0.3);
     background-color:#292986;
     display:flex;
     align-items: center;
@@ -55,5 +55,14 @@ html {
     font-family: 'Raleway',sans-serif;
     font-size: 9rem;
     color: hsl(255, 23%, 90%);
-    /* color: rgb(0, 183, 255); */
+}
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }   
+}
+@media (max-width:441px){
+    html{
+        font-size: 38%;
+    }   
 }
